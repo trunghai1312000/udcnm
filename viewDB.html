@@ -1,0 +1,19 @@
+{% extends 'headerPage.html' %}
+
+{% block content %}
+
+<div class="container gallery-container">
+    <h1>Image Gallery was uploaded</h1>
+    <div class="tz-gallery">
+        <div class="row">
+            {% for i in listOfImagesPath %}
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="{{i}}">
+                    <img src="{{i}}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

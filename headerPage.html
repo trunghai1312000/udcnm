@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <title>Dog classification</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+     <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+     <link rel="stylesheet" href="{% static 'css/baguetteBox.css' %}">
+     <!-- MAIN CSS -->
+</head>
+
+<body>
+     <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+               <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                         style="margin-top: 21px;">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav" style="margin-top: 15px; margin-left: 10px;">
+                         <li><a href="/" class="smoothScroll">Home</a></li>
+                         <li><a href="viewDataBase" class="smoothScroll">View Gallery</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" style="margin-top: 15px;">
+                         <li><a href="admin/" class="smoothScroll">Log in</a></li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+          {% block content%}
+
+          {% endblock %}
+
+
+     <footer data-stellar-background-ratio="5">
+
+     </footer>
+
+     <script src="{% static 'js/jquery.js' %}"></script>
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'js/jquery.sticky.js' %}"></script>
+     <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+     <script src="{% static 'js/wow.min.js' %}"></script>
+     <script src="{% static 'js/smoothscroll.js' %}"></script>
+     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+     <script src="{% static 'js/custom.js' %}"></script>
+     <script src="{% static 'js/upload.js' %}"></script>
+     <script src="{% static 'js/gallery.js' %}"></script>
+     <script>
+          baguetteBox.run('.tz-gallery');
+     </script>
+</body>
+
+</html>
